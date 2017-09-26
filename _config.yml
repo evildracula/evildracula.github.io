@@ -8,8 +8,8 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : eVilDraCulA
-tagline: Site Tagline
+title : eVilDracula
+tagline: development
 author :
   name : Shawn YUAN
   email : yuanhui0628#gmail.com
