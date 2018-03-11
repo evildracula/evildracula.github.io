@@ -16,7 +16,7 @@ title : eVilDracula
 tagline: Site Tagline
 author :
   name : Shawn YUAN
-  email : yuanhui0628@gmail.com
+  email : yuanhui0628 at# gmail.com
   github : evildracula
   twitter : evildracula
   feedburner : feedname
@@ -86,7 +86,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disaus
+    provider : disqus
     disqus :
       short_name : evildracula
     livefyre :
