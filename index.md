@@ -16,6 +16,8 @@ tagline: 不吃屎 23333
   {% endfor %}
 </ul>
 
+![Splash](_resources/images/system/splash.jpg "splash")
+
 ## TODO
 **2018 计划**
 - 丰富这个网站
