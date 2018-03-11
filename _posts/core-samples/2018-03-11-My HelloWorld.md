@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category: personal
 tagline: "Supporting tagline"
 tags : [hello]
 ---
