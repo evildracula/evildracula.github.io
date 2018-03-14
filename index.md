@@ -24,4 +24,6 @@ tagline: 不吃屎 23333
 - 减肥
 
 
-![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}
+|pic1|pic2|
+|---|---|
+|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|
