@@ -16,10 +16,12 @@ tagline: 不吃屎 23333
   {% endfor %}
 </ul>
 
-![Splash](/resources/images/system/splash.jpg "splash")
 
 ## TODO
 **2018 计划**
 - 丰富这个网站
 - 实现小愿望
 - 减肥
+
+
+![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}
