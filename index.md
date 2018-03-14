@@ -5,9 +5,7 @@ tagline: 不吃屎 23333
 ---
 {% include JB/setup %}
 
-<div id="main">
 
-<div id="left">
 Recent
 ===
 <ul class="posts">
@@ -16,9 +14,7 @@ Recent
   {% endfor %}
 </ul>
 
-</div>
 
-<div id="right">
 Todo
 ===
 **2018 计划**
@@ -30,5 +26,3 @@ Todo
 |||
 |---|---|
 |![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|
-</div>
-</div>
