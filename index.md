@@ -5,7 +5,7 @@ tagline: 不吃屎 23333
 ---
 {% include JB/setup %}
 
-
+<div class="cate-bar"><span id="cateBar"></span></div>
 Recent 10
 ===
 <ul class="posts">
@@ -17,12 +17,16 @@ Recent 10
 
 Todo
 ===
-**2018 计划**
-- 丰富这个网站
-- 实现小愿望
-- 减肥
+**2018 Planning**
+- Enrich THIS
+- AI
+- Training
 
+</div>
+<div class="aside">
 
 |||
 |---|---|
 |![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|
+
+</div>
