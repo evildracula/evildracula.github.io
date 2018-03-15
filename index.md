@@ -15,6 +15,7 @@ Recent 10
 </ul>
 
 
+</div>
 Todo
 ===
 **2018 Planning**
@@ -22,7 +23,6 @@ Todo
 - AI
 - Training
 
-</div>
 <div class="aside">
 
 |||
