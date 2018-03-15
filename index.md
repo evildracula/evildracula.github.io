@@ -21,7 +21,3 @@ Todo
 - AI
 - Training
 
-
-|||
-|---|---|
-|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|
