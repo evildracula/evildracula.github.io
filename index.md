@@ -3,6 +3,7 @@ layout: page
 title: Buchers'
 tagline: 不吃屎 23333
 ---
+<div class="index-content blog">
 {% include JB/setup %}
 
 <div class="cate-bar"><span id="cateBar"></span></div>
@@ -23,10 +24,11 @@ Todo
 - AI
 - Training
 
-<div class="aside">
+<div class="aside"></div>
 
 |||
 |---|---|
 |![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|![Splash](/resources/images/system/splash.jpg){:height="50%" width="50%"}|
+
 
 </div>
