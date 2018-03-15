@@ -6,14 +6,14 @@ group: navigation
 ---
 {% include JB/setup %}
 
-`SAP`
+SAP
 ===
 `2017.1 - Now`
 ---
 - Title: Senior Java Engineer
 - Scope: Research, Requirement Collection, Design, Implementation
   
-`Bleum`
+Bleum
 ===
 `2013.8 - 2016.12`
 ---
@@ -21,7 +21,7 @@ group: navigation
 - Scope: Research, Design, Implementation
 
   
-`PTC`
+PTC
 ===
 `2009.11 - 2013.7`
 ---
@@ -29,14 +29,14 @@ group: navigation
 - Scope: Requirement Collection, Customer Management, Design, Implementation
 
 
-`Cognizant`
+Cognizant
 ===
 `2007.12 - 2009.11`
 ---
 - Title: Software Engineer
 - Scope: TIBCO, Java
 
-`JumpIntl`
+JumpIntl
 ===
 `2006.7 - 2007.11`
 ---
