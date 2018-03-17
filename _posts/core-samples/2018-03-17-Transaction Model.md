@@ -7,8 +7,8 @@ tags : [transaction, db_model]
 {% include JB/setup %}
 
 ### TABLE GROUP
-|ID|TASK_GROUP_NAME|
-|100|Make Java Coffee|
+|ID|TASK_GROUP_NAME|  
+|100|Make Java Coffee|  
 
 ### TABLE TASK
 |ID|DESCRIPTION|TYPE|ARGS(json)|
