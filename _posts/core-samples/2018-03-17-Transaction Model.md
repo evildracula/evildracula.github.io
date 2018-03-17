@@ -6,14 +6,14 @@ tags : [transaction, db_model]
 ---
 {% include JB/setup %}
 
-**TABLE GROUP**
+**TABLE GROUP**  
 |ID|TASK_GROUP_NAME|
 |---|---|
 |100|Make Java Coffee|
 
 ----
 
-**TABLE TASK**
+**TABLE TASK**  
 |ID|DESCRIPTION|TYPE|ARGS(json)|
 |---|---|---|---|
 |1000|Fetch the cups|RESTful|<code>{'url':'system/coffee/cups', 'color':'${color}, 'size':'16 Oz'}</code>|
@@ -21,7 +21,7 @@ tags : [transaction, db_model]
 
 ----
 
-**TABLE TASK_ROLLBACK* (TBD)**
+**TABLE TASK_ROLLBACK* (TBD)**  
 |ID|TASK_ID|DESCRIPTION|TYPE|ARGS(json)|
 |---|---|---|---|---|
 |1|1000|Rollback Fetch cups|RESTful|<code>{'url':'system/coffee/rollback', 'by':'hand'}</code>|
@@ -29,7 +29,7 @@ tags : [transaction, db_model]
 
 ----
 
-**TABLE TASK_GROUP_DEF**
+**TABLE TASK_GROUP_DEF**  
 |ID|GROUP_ID|TASK_STEP_ID|TASK_ID|
 |---|---|---|---|
 |10000|100|1|1000|
@@ -37,7 +37,7 @@ tags : [transaction, db_model]
 
 ----
 
-**TABLE TASK_GROUP_REC**
+**TABLE TASK_GROUP_REC**  
 |ID|TASK_GROUP_ID|TASK_STEP_ID|CREATED_DATE|MODIFIED_DATE|STATUS|
 |---|---|---|---|---|---|
 |1|1|2|2018-01-01 01:00:00.0000|2018-01-01 01:00:01.0000|SUCCESS|
