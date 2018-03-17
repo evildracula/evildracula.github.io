@@ -6,7 +6,7 @@ tags : [transaction, db_model]
 ---
 {% include JB/setup %}
 
-TABLE GROUP
+<h1>TABLE GROUP</h1>
 <table>
 <thead>
 <tr>
@@ -20,36 +20,178 @@ TABLE GROUP
 <tbody>
 </table>
 
-TABLE TASK
-===
-|ID|DESCRIPTION|TYPE|ARGS(json)|
-|---|---|---|---|
-|1000|Fetch the cups|RESTful|<code>{'url':'system/coffee/cups', 'color':'${color}, 'size':'16 Oz'}</code>|
-|1001|Pour the powder|RESTful|<code>{'url':'system/coffee/powder', 'taste':'${dark}, 'quality':'${exellent}'</code>|
+<h1>TABLE TASK</h1>
+<table>
+<thead>
+<tr>
+<td>ID</td>
+<td>DESCRIPTION</td>
+<td>TYPE</td>
+<td>ARGS(json)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1000</td>
+    <td>Fetch the cup</td>
+    <td>RESTful</td>
+    <td><code>{'url':'system/coffee/cups', 'color':'${color}, 'size':'16 Oz'}</code></td>
+</tr>
+<tr>
+    <td>1001</td>
+    <td>Pour the powder</td>
+    <td>RESTful</td>
+    <td><code>{'url':'system/coffee/powder', 'taste':'${dark}, 'quality':'${exellent}'</code></td>
+</tr>
+
+<tbody>
+</table>
 
 
-### TABLE TASK_ROLLBACK* (TBD)
-|ID|TASK_ID|DESCRIPTION|TYPE|ARGS(json)|
-|---|---|---|---|---|
-|1|1000|Rollback Fetch cups|RESTful|<code>{'url':'system/coffee/rollback', 'by':'hand'}</code>|
-|2|1001|Rollback pour the powder|RESTful|<code>{'url':'system/coffee/powder', 'by':'bottle'}</code>|
+
+<h1>TABLE TASK_ROLLBACK* (TBD)</h1>
+<table>
+<thead>
+<tr>
+<td>ID</td>
+<td>TASK_ID</td>
+<td>DESCRIPTION</td>
+<td>TYPE</td>
+<td>ARGS(json)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td>1000</td>
+    <td>Rollback Fetch cups</td>
+    <td>RESTful</td>
+    <td><code>{'url':'system/coffee/rollback', 'by':'hand'}</code></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>1001</td>
+    <td>Rollback pour the powder</td>
+    <td>RESTful</td>
+    <td><code>{'url':'system/coffee/powder', 'by':'bottle'}</code></td>
+</tr>
+
+<tbody>
+</table>
+
+<h1>TABLE TASK_GROUP_DEF</h1>
+<table>
+<thead>
+<tr>
+<td>ID</td>
+<td>GROUP_ID</td>
+<td>TASK_STEP_ID</td>
+<td>TASK_ID</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>10000</td>
+    <td>100</td>
+    <td>1</td>
+    <td>1000</td>
+</tr>
+<tr>
+    <td>10001</td>
+    <td>100</td>
+    <td>2</td>
+    <td>1001</td>
+</tr>
+
+<tbody>
+</table>
 
 
-### TABLE TASK_GROUP_DEF
-|ID|GROUP_ID|TASK_STEP_ID|TASK_ID|
-|---|---|---|---|
-|10000|100|1|1000|
-|10001|100|2|1001|
+<h1>TABLE TASK_GROUP_REC</h1>
+<table>
+<thead>
+<tr>
+<td>ID</td>
+<td>TASK_GROUP_ID</td>
+<td>TASK_STEP_ID</td>
+<td>CREATED_DATE</td>
+<td>MODIFIED_DATE</td>
+<td>STATUS</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>2</td>
+    <td>2018-01-01 01:00:00.0000</td>
+    <td>2018-01-01 01:00:01.0000</td>
+    <td>SUCCESS</td>
+</tr>
 
+<tr>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>2018-01-01 01:00:00.0000</td>
+    <td>2018-01-01 01:00:02.0000</td>
+    <td>IN_PROGRESS</td>
+</tr>
 
-### TABLE TASK_GROUP_REC
-|ID|TASK_GROUP_ID|TASK_STEP_ID|CREATED_DATE|MODIFIED_DATE|STATUS|
-|---|---|---|---|---|---|
-|1|1|2|2018-01-01 01:00:00.0000|2018-01-01 01:00:01.0000|SUCCESS|
-|2|1|1|2018-01-01 01:00:00.0000|2018-01-01 01:00:02.0000|IN_PROGRESS|
-|3|1|2|2018-01-01 01:00:00.0000|2018-01-01 01:00:03.0000|FAIL|
-|4|1|1|2018-01-01 01:00:00.0000|2018-01-01 01:00:04.0000|CANCELED|
-|5|1|2|2018-01-01 01:00:00.0000|2018-01-01 01:00:05.0000|CANCELED_BY_USER|
-|6|1|1|2018-01-01 01:00:00.0000|2018-01-01 01:00:06.0000|SHUTDOWN_IN_PROGRESS|
-|7|1|2|2018-01-01 01:00:00.0000|2018-01-01 01:00:07.0000|SUSPEND|
-|8|1|2|2018-01-01 01:00:00.0000|2018-01-01 01:00:08.0000|ROLLBACK|
+<tr>
+        <td>3</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2018-01-01 01:00:00.0000</td>
+        <td>2018-01-01 01:00:03.0000</td>
+        <td>FAIL</td>
+</tr>
+
+<tr>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2018-01-01 01:00:00.0000</td>
+        <td>2018-01-01 01:00:04.0000</td>
+        <td>CANCELED</td>
+</tr>
+
+<tr>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2018-01-01 01:00:00.0000</td>
+        <td>2018-01-01 01:00:05.0000</td>
+        <td>CANCELED_BY_USER</td>
+</tr>
+
+<tr>
+        <td>6</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2018-01-01 01:00:00.0000</td>
+        <td>2018-01-01 01:00:06.0000</td>
+        <td>SHUTDOWN_IN_PROGRESS</td>
+</tr>
+
+<tr>
+        <td>7</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2018-01-01 01:00:00.0000</td>
+        <td>2018-01-01 01:00:07.0000</td>
+        <td>SUSPEND</td>
+</tr>
+
+<tr>
+        <td>8</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2018-01-01 01:00:00.0000</td>
+        <td>2018-01-01 01:00:08.0000</td>
+        <td>ROLLBACK</td>
+</tr>
+
+<tbody>
+</table>
+
