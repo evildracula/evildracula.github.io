@@ -6,7 +6,8 @@ tags : [transaction, db_model]
 ---
 {% include JB/setup %}
 
-### TABLE GROUP
+TABLE GROUP
+===
 <table>
 <thead>
 <tr>
@@ -20,7 +21,8 @@ tags : [transaction, db_model]
 <tbody>
 </table>
 
-### TABLE TASK
+TABLE TASK
+===
 |ID|DESCRIPTION|TYPE|ARGS(json)|
 |---|---|---|---|
 |1000|Fetch the cups|RESTful|<code>{'url':'system/coffee/cups', 'color':'${color}, 'size':'16 Oz'}</code>|
