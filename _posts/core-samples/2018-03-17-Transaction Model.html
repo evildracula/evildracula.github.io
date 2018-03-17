@@ -9,12 +9,12 @@ tags : [transaction, db_model]
 .datagrid table { border-collapse: collapse; text-align: left; width: 100%; } .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }.datagrid table td, .datagrid table th { padding: 3px 10px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#ffffff; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00496B; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEF4; color: #00496B; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEF4;} .datagrid table tfoot td { padding: 0; font-size: 12px } .datagrid table tfoot td div{ padding: 2px; }.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }.datagrid table tfoot  li { display: inline; }.datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #006699;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; }.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #006699; color: #FFFFFF; background: none; background-color:#00557F;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
 </style>
 
-<h1>TABLE GROUP</h1>
+<h3>TABLE GROUP</h3>
 <table>
 <thead>
 <tr>
-<td>ID</td>
-<td>TASK_GROUP_NAME</td>
+<th>ID</th>
+<th>TASK_GROUP_NAME</th>
 </tr>
 </thead>
 <tbody>
@@ -23,14 +23,14 @@ tags : [transaction, db_model]
 <tbody>
 </table>
 
-<h1>TABLE TASK</h1>
+<h3>TABLE TASK</h3>
 <table>
 <thead>
 <tr>
-<td>ID</td>
-<td>DESCRIPTION</td>
-<td>TYPE</td>
-<td>ARGS(json)</td>
+<th>ID</th>
+<th>DESCRIPTION</th>
+<th>TYPE</th>
+<th>ARGS(json)</th>
 </tr>
 </thead>
 <tbody>
@@ -52,15 +52,15 @@ tags : [transaction, db_model]
 
 
 
-<h1>TABLE TASK_ROLLBACK* (TBD)</h1>
+<h3>TABLE TASK_ROLLBACK* (TBD)</h3>
 <table>
 <thead>
 <tr>
-<td>ID</td>
-<td>TASK_ID</td>
-<td>DESCRIPTION</td>
-<td>TYPE</td>
-<td>ARGS(json)</td>
+<th>ID</th>
+<th>TASK_ID</th>
+<th>DESCRIPTION</th>
+<th>TYPE</th>
+<th>ARGS(json)</th>
 </tr>
 </thead>
 <tbody>
@@ -82,14 +82,14 @@ tags : [transaction, db_model]
 <tbody>
 </table>
 
-<h1>TABLE TASK_GROUP_DEF</h1>
+<h3>TABLE TASK_GROUP_DEF</h3>
 <table>
 <thead>
 <tr>
-<td>ID</td>
-<td>GROUP_ID</td>
-<td>TASK_STEP_ID</td>
-<td>TASK_ID</td>
+<th>ID</th>
+<th>GROUP_ID</th>
+<th>TASK_STEP_ID</th>
+<th>TASK_ID</th>
 </tr>
 </thead>
 <tbody>
@@ -110,16 +110,16 @@ tags : [transaction, db_model]
 </table>
 
 
-<h1>TABLE TASK_GROUP_REC</h1>
+<h3>TABLE TASK_GROUP_REC</h3>
 <table>
 <thead>
 <tr>
-<td>ID</td>
-<td>TASK_GROUP_ID</td>
-<td>TASK_STEP_ID</td>
-<td>CREATED_DATE</td>
-<td>MODIFIED_DATE</td>
-<td>STATUS</td>
+<th>ID</th>
+<th>TASK_GROUP_ID</th>
+<th>TASK_STEP_ID</th>
+<th>CREATED_DATE</th>
+<th>MODIFIED_DATE</th>
+<th>STATUS</th>
 </tr>
 </thead>
 <tbody>
