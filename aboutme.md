@@ -21,7 +21,7 @@ group: navigation
 
 ---
 
-![PTC](https://www.ptc.com/-/media/PTC-Images/logo_dark.png?h=53&w=135&la=en&hash=176D3578983977F77E260619F84B33A8EB4003BD)
+![PTC](https://www.ptc.com/-/media/PTC-Images/logo_dark.png?h=53&w=135&la=en&hash=176D3578983977F77E260619F84B33A8EB4003BD)  
 `2009.11 - 2013.7`
 ### Implementation Consultant
 - Reviewing requests from Business Consultant
@@ -31,7 +31,8 @@ group: navigation
 
 ---
 
-![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg)
+![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="50%" width="50%"}  
+  
 `2007.12 - 2009.11`
 ### Software Engineer
 Support the deployed TIBCO Application, including monitoring, development
@@ -44,7 +45,7 @@ and deployment.Co-operating with onsite for new change request from custo mer. T
 
 ---
 
-![JumpIntl](https://media.licdn.com/mpr/mpr/shrink_200_200/AAMABAQIAAkAAQAAAAAAAA8uAAAAJDk5MzI5NWNkLTRhYzItNDk0MS1iOGEyLTc1MTk3NTc4YzUxZA.bin)
+![JumpIntl](https://media.licdn.com/mpr/mpr/shrink_200_200/AAMABAQIAAkAAQAAAAAAAA8uAAAAJDk5MzI5NWNkLTRhYzItNDk0MS1iOGEyLTc1MTk3NTc4YzUxZA.bin){:height="50%" width="50%"}  
 `2006.7 - 2007.11`
 ### Software Engineer
 - Java/J2EE Programming
