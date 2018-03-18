@@ -19,7 +19,8 @@ group: navigation
 - Title: System Integration Engineer
 - Scope: Research, Design, Implementation
 
-  
+<div style='display: none'>
+
 ### PTC
 `2009.11 - 2013.7`
 ---
@@ -38,3 +39,4 @@ group: navigation
 ---
 - Title: Software Engineer
 - Scope: Java
+</div>
