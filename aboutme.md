@@ -31,7 +31,7 @@ group: navigation
 
 ---
 
-![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="50%" width="50%"}  
+![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="25%" width="25%"}  
   
 `2007.12 - 2009.11`
 ### Software Engineer
@@ -45,7 +45,7 @@ and deployment.Co-operating with onsite for new change request from custo mer. T
 
 ---
 
-![JumpIntl](https://media.licdn.com/mpr/mpr/shrink_200_200/AAMABAQIAAkAAQAAAAAAAA8uAAAAJDk5MzI5NWNkLTRhYzItNDk0MS1iOGEyLTc1MTk3NTc4YzUxZA.bin){:height="50%" width="50%"}  
+![JumpIntl](https://media.licdn.com/mpr/mpr/shrink_200_200/AAMABAQIAAkAAQAAAAAAAA8uAAAAJDk5MzI5NWNkLTRhYzItNDk0MS1iOGEyLTc1MTk3NTc4YzUxZA.bin){:height="25%" width="25%"}  
 `2006.7 - 2007.11`
 ### Software Engineer
 - Java/J2EE Programming
