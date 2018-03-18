@@ -9,7 +9,6 @@ group: navigation
 ---
 ![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)
 `2017.1 -- Now`  
----
 - Title: Senior Java Engineer
 - Scope: Research, Requirement Collection, Design, Implementation
 
