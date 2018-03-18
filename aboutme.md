@@ -8,19 +8,18 @@ group: navigation
 ## Working Experience
 ---
 ![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)
-### SAP
 `2017.1 - Now`
 ---
 - Title: Senior Java Engineer
 - Scope: Research, Requirement Collection, Design, Implementation
-
+---
 ![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)
-### Bleum
 `2013.8 - 2016.12`
 ---
 - Title: System Integration Engineer
 - Scope: Research, Design, Implementation
 
+---
 <div style='display: none'>
 
 ### PTC
