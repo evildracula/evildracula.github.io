@@ -7,7 +7,7 @@ comments: true
 ---
 {% include JB/setup %}
 
-<pre><code>
+```
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
@@ -195,4 +195,4 @@ public class Java8Tester {
       return getSum(numbers) / numbers.size();
    }
 }
-</code></pre>
+```
