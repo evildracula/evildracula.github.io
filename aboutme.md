@@ -24,6 +24,7 @@ group: navigation
 ![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)  
 `2013.8 -- 2016.12`  
 **Scope:** Research, Design, Implementation
+
 ### System Integration Engineer
 - As a Integration Engineer, provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
 - He works onsite in America during the time of integration with client to reach the same goal with client management skill
@@ -32,7 +33,8 @@ group: navigation
 - Requirement collection and analysis for documentation
 - Generate Component Design based on business requirement
 - Implement with Java, JScript, Bash and Python
-- Install, config and maintain the Production Environment 
+- Install, config and maintain the Production Environment  
+
 ### Scrum Master
 - Clear the blocker between developer and product owner to ensure product owner can drive the development directly
 - Guide the product owner to apply Agile on daily work
