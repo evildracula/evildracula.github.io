@@ -25,7 +25,7 @@ group: navigation
 `2013.8 -- 2016.12`  
 **Scope:** Research, Design, Implementation
 
-### System Integration Engineer
+### Integration Engineer
 - As a Integration Engineer, provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
 - He works onsite in America during the time of integration with client to reach the same goal with client management skill
 - Good write/oral English Communication
