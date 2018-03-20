@@ -9,15 +9,36 @@ group: navigation
 ---
 ![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)  
 `2017.1 -- Now`  
+**Scope:** Research, Requirement Collection, Design, Implementation
 ### Senior Java Engineer
-- Scope: Research, Requirement Collection, Design, Implementation
+- Customer Promise and Service
+- Requirement Analysis
+- Micro services Design & Implementation
+- spring-boot & spring-integration
+- AppToAppSSO with SAML
+- Git CI integration and deployment
+- S4/HANA DB management
 
 ---
 
 ![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)  
 `2013.8 -- 2016.12`  
+**Scope:** Research, Design, Implementation
 ### System Integration Engineer
-- Scope: Research, Design, Implementation
+- As a Integration Engineer, provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
+- He works onsite in America during the time of integration with client to reach the same goal with client management skill
+- Good write/oral English Communication
+- Schedule daily meeting with client
+- Requirement collection and analysis for documentation
+- Generate Component Design based on business requirement
+- Implement with Java, JScript, Bash and Python
+- Install, config and maintain the Production Environment 
+### Scrum Master
+- Clear the blocker between developer and product owner to ensure product owner can drive the development directly
+- Guide the product owner to apply Agile on daily work
+- Improve the situation and atmosphere of the whole team
+- Stimulate the creative of the team to improve productivity
+- Customer Promise and Service 
 
 ---
 
@@ -32,7 +53,6 @@ group: navigation
 ---
 
 ![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="25%" width="25%"}  
-  
 `2007.12 - 2009.11`
 ### Software Engineer
 Support the deployed TIBCO Application, including monitoring, development
