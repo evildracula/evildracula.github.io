@@ -33,7 +33,19 @@ group: navigation
 
 ### Project
 #### DSX BIS
->  DSX BIS is the next generation of Support System which includes incident handling, feature innovation and GDPR compliance.
+>  `DSX BIS` is the next generation of Support System which includes `incident` handling, `feature` innovation and `GDPR` compliance.
+>
+>He works on microservie framework, `spring-boot` for provding consolidated distrubted `microservices`.
+>
+> Also he enhanced `JWT` Token and protected sensitive private user information by salted hash in order to comply with `GDPR` which will take effect in later Aug 2018 for security audit.
+>
+>In order to improve the deliveries, he works on Continue Integration of `DSX BIS` as full stack devops requires:
+>- Git branches code management
+>- `Jenkins` workflow on `DEV`, `VAL` and `PROD`
+>- `Sonar`, `Jacoco`, `SoapUI` maven plugin integration for improving code quality
+>
+
+
 
 ---
 
@@ -63,11 +75,11 @@ group: navigation
 `2013.08-2016.12`
 >  The bedrock system is service platform for Walmart underlying infrastructure.
 >
->  The system integrates among OMS, Carrier and Email systems on ETL and transformation between systems. It's the bridge between inner and outer system. We devote not only to improve the stability of the system but also commit to adapt to the explosive growth of the business needs.
+>  The system integrates among `OMS`, `Carrier` and `Email` systems on ETL and transformation between systems. It's the bridge between inner and outer system. We devote not only to improve the stability of the system but also commit to adapt to the explosive growth of the business needs.
 >
 >  While onsite, he took quick reaction to the raised change request during the E2E phase of Pangaea migration with patient communication with onsite colleague, comprehensive analysis of business logic and rapid iteration of deployment. Also he tried his best to analyze the potentiality and resolve the task of issue by engaging with team both offshore and onsite.
 >
->  Black Friday and Cyber Monday, which are the most important events for customer, is a big challenge to the stability and performance of the system. Customer did want to execute a drill, which could provide a practical situation, to tune the system to the best of it. He set up a stress test tool which could simulate the actual situation (Algorism could be changed between ‘Round Robin Load Balance’ and ‘Random Load Balance’) and stress of the Holidays. Customer got benefit from simulation result bypreparation to prevent crash caused by insufficient system bandwidth.
+>  Black Friday and Cyber Monday, which are the most important events for customer, is a big challenge to the stability and performance of the system. Customer did want to execute a drill, which could provide a practical situation, to tune the system to the best of it. He set up a stress test tool which could simulate the actual situation (Algorism could be changed between `Round Robin Load Balance` and `Random Load Balance`) and stress of the Holidays. Customer got benefit from simulation result bypreparation to prevent crash caused by insufficient system bandwidth.
   
 ---
 
