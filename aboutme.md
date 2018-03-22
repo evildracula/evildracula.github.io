@@ -36,7 +36,7 @@ DSX BIS is the next generation of Support System which includes incident handlin
 
 ![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)  
 `2013.8 -- 2016.12`  
-**Eviroment :** Linux/Unix, Jdk 1.7, JScript, Bash and Python
+**Eviroment :** Linux/Unix, Jdk 1.7, Oracle 10g, Cassandra, JScript, Bash and Python
   
 ### System Integration
 - Provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
@@ -62,7 +62,7 @@ DSX BIS is the next generation of Support System which includes incident handlin
 ---
 
 ![PTC](https://www.ptc.com/-/media/PTC-Images/logo_dark.png?h=53&w=135&la=en&hash=176D3578983977F77E260619F84B33A8EB4003BD)  
-`2009.11 - 2013.7`
+`2009.11 - 2013.7`  
 **Eviroment :** Windchill10, Linux/Unix, Jdk 1.5, JScript
 ### Implementation Consultant
 - Reviewing requests from Business Consultant
