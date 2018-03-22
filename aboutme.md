@@ -73,7 +73,8 @@ DSX BIS is the next generation of Support System which includes incident handlin
 ---
 
 ![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="25%" width="25%"}  
-`2007.12 - 2009.11`
+`2007.12 - 2009.11`  
+**Eviroment :** Jdk 1.4, JScript and TIBCO BW
 ### Software Engineer
 Support the deployed TIBCO Application, including monitoring, development
 and deployment.Co-operating with onsite for new change request from custo mer. TIBCO is a Java based platform which focuses on business.
@@ -86,7 +87,8 @@ and deployment.Co-operating with onsite for new change request from custo mer. T
 ---
 
 ![JumpIntl](https://media.licdn.com/mpr/mpr/shrink_200_200/AAMABAQIAAkAAQAAAAAAAA8uAAAAJDk5MzI5NWNkLTRhYzItNDk0MS1iOGEyLTc1MTk3NTc4YzUxZA.bin){:height="15%" width="15%"}  
-`2006.7 - 2007.11`
+`2006.7 - 2007.11`  
+**Eviroment :** Jdk 1.4, JScript and Linux
 ### Software Engineer
 - Java/J2EE Programming
 - Open source Research
