@@ -30,12 +30,16 @@ group: navigation
 - GDPR compliance
 
 ### Project
+#### DSX BIS
+```
 DSX BIS is the next generation of Support System which includes incident handling, feature innovation and GDPR compliance.
+```
 
 ---
 
 ![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)  
 `2013.8 -- 2016.12`  
+
 **Eviroment :** Linux/Unix, Jdk 1.7, Oracle 10g, Cassandra, JScript, Bash and Python
   
 ### System Integration
@@ -55,14 +59,17 @@ DSX BIS is the next generation of Support System which includes incident handlin
 - Customer Promise and Service 
 
 ### PROJECT
-- Walmart Bedrock
-- Walmart Bedrock NG
-
+#### Walmart Labs Bedrock
+`2013.08-2016.12`
+```
+The bedrock system is service platform for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems. It's the bridge between inner and outer system. We devote not only to improve the stability of the system but also commit to adapt to the explosive growth of the business needs. As a Integration Engineer, provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
+```
 
 ---
 
 ![PTC](https://www.ptc.com/-/media/PTC-Images/logo_dark.png?h=53&w=135&la=en&hash=176D3578983977F77E260619F84B33A8EB4003BD)  
 `2009.11 - 2013.7`  
+
 **Eviroment :** Windchill10, Linux/Unix, Jdk 1.5, JScript
 ### Implementation Consultant
 - Reviewing requests from Business Consultant
@@ -74,6 +81,7 @@ DSX BIS is the next generation of Support System which includes incident handlin
 
 ![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="25%" width="25%"}  
 `2007.12 - 2009.11`  
+
 **Eviroment :** Jdk 1.4, JScript and TIBCO BW
 ### Software Engineer
 Support the deployed TIBCO Application, including monitoring, development
@@ -88,6 +96,7 @@ and deployment.Co-operating with onsite for new change request from custo mer. T
 
 ![JumpIntl](https://media.licdn.com/mpr/mpr/shrink_200_200/AAMABAQIAAkAAQAAAAAAAA8uAAAAJDk5MzI5NWNkLTRhYzItNDk0MS1iOGEyLTc1MTk3NTc4YzUxZA.bin){:height="15%" width="15%"}  
 `2006.7 - 2007.11`  
+
 **Eviroment :** Jdk 1.4, JScript and Linux
 ### Software Engineer
 - Java/J2EE Programming
