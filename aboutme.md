@@ -18,8 +18,8 @@ group: navigation
 `2017.1 -- present`  
 **Eviroment :** Linux, S4/HANA, Jdk 1.8, JScript, Bash and Python
 ###  Architecture Design
-- Customer Promise and Service
 - Work with German colleagues on requirement and system design
+- Customer Promise and Service
 - Apply microservices spring-boot & spring-integration
 - AppToAppSSO with SAML
 - Git CI integration and deployment
@@ -62,7 +62,10 @@ DSX BIS is the next generation of Support System which includes incident handlin
 #### Walmart Labs Bedrock
 `2013.08-2016.12`
 ```
-The bedrock system is service platform for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems. It's the bridge between inner and outer system. We devote not only to improve the stability of the system but also commit to adapt to the explosive growth of the business needs. As a Integration Engineer, provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
+The bedrock system is service platform for Walmart underlying infrastructure. The system
+integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
+It's the bridge between inner and outer system. We devote not only to improve
+the stability of the system but also commit to adapt to the explosive growth of the business needs.
 ```
 
 ---
