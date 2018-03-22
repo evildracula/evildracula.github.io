@@ -5,35 +5,47 @@ header: About
 group: navigation
 ---
 {% include JB/setup %}
+## Personal Information
+**Current Company :** SAP  
+**Year to work :**  12 Years  
+**Certifications**
+- Domestic Senior Software Engineer Certification 2002.4
+- PMP 2015.12
+
 ## Working Experience
 ---
 ![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)  
-`2017.1 -- Now`  
-**Scope:** Research, Requirement Collection, Design, Implementation
+`2017.1 -- present`  
+**Eviroment :** Linux, S4/HANA, Jdk 1.8, JScript, Bash and Python
 ###  Architecture Design
 - Customer Promise and Service
-- Requirement Analysis
-- Micro services Design & Implementation
-- spring-boot & spring-integration
+- Work with German colleagues on requirement and system design
+- Apply microservices spring-boot & spring-integration
 - AppToAppSSO with SAML
 - Git CI integration and deployment
 - S4/HANA DB management
+- Devops
+- Performance and security audit
+- Distributed Transaction
+- GDPR compliance
+
+### Project
+DSX BIS is the next generation of Support System which includes incident handling, feature innovation and GDPR compliance.
 
 ---
 
 ![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)  
 `2013.8 -- 2016.12`  
-**Scope:** Research, Design, Implementation
-
+**Eviroment :** Linux/Unix, Jdk 1.7, JScript, Bash and Python
+  
 ### System Integration
 - Provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
-- He works onsite in America during the time of integration with client to reach the same goal with client management skill
+- Works onsite in America during the time of integration with client to reach the same goal with client management skill
 - Good write/oral English Communication
 - Schedule daily meeting with client
 - Requirement collection and analysis for documentation
 - Generate Component Design based on business requirement
-- Implement with Java, JScript, Bash and Python
-- Install, config and maintain the Production Environment  
+- Install, config and maintain the Production Environment (Unix/Linux)
 
 ### Scrum Master
 - Clear the blocker between developer and product owner to ensure product owner can drive the development directly
@@ -42,10 +54,16 @@ group: navigation
 - Stimulate the creative of the team to improve productivity
 - Customer Promise and Service 
 
+### PROJECT
+- Walmart Bedrock
+- Walmart Bedrock NG
+
+
 ---
 
 ![PTC](https://www.ptc.com/-/media/PTC-Images/logo_dark.png?h=53&w=135&la=en&hash=176D3578983977F77E260619F84B33A8EB4003BD)  
 `2009.11 - 2013.7`
+**Eviroment :** Windchill10, Linux/Unix, Jdk 1.5, JScript
 ### Implementation Consultant
 - Reviewing requests from Business Consultant
 - Component Design, Usecase design, Project schedule
