@@ -16,7 +16,9 @@ group: navigation
 ---
 ![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)  
 `2017.1 -- present`  
+
 **Eviroment :** Linux, S4/HANA, Jdk 1.8, JScript, Bash and Python
+**Industry :** ERP, Cloud
 ###  Architecture Design
 - Work with German colleagues on requirement and system design
 - Customer Promise and Service
@@ -41,7 +43,7 @@ DSX BIS is the next generation of Support System which includes incident handlin
 `2013.8 -- 2016.12`  
 
 **Eviroment :** Linux/Unix, Jdk 1.7, Oracle 10g, Cassandra, JScript, Bash and Python
-  
+**Industry :** Retail
 ### System Integration
 - Provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
 - Works onsite in America during the time of integration with client to reach the same goal with client management skill
@@ -77,6 +79,7 @@ the stability and performance of the system. Customer did want to execute a dril
 `2009.11 - 2013.7`  
 
 **Eviroment :** Windchill10, Linux/Unix, Jdk 1.5, JScript
+**Industry :** PDM/PLM
 ### Implementation Consultant
 - Reviewing requests from Business Consultant
 - Component Design, Usecase design, Project schedule
