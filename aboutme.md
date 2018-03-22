@@ -35,11 +35,11 @@ group: navigation
 #### DSX BIS
 >  `DSX BIS` is the next generation of Support System which includes `incident` handling, `feature` innovation and `GDPR` compliance.
 >
->He works on microservie framework, `spring-boot` for provding consolidated distrubted `microservices`.
+>He works on design of microservie framework, `spring-boot` for provding consolidated distrubted `microservices`.
 >
 > Also he enhanced `JWT` Token and protected sensitive private user information by salted hash in order to comply with `GDPR` which will take effect in later Aug 2018 for security audit.
 >
->In order to improve the deliveries, he works on Continue Integration of `DSX BIS` as full stack devops requires:
+>In order to improve the deliveries, he applies Continue Integration of `DSX BIS` as full stack devops requires:
 >- Git branches code management
 >- `Jenkins` workflow on `DEV`, `VAL` and `PROD`
 >- `Sonar`, `Jacoco`, `SoapUI` maven plugin integration for improving code quality
