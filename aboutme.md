@@ -10,7 +10,7 @@ group: navigation
 ![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)  
 `2017.1 -- Now`  
 **Scope:** Research, Requirement Collection, Design, Implementation
-### Senior Java Engineer
+###  Architecture Design
 - Customer Promise and Service
 - Requirement Analysis
 - Micro services Design & Implementation
@@ -25,8 +25,8 @@ group: navigation
 `2013.8 -- 2016.12`  
 **Scope:** Research, Design, Implementation
 
-### Integration Engineer
-- As a Integration Engineer, provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
+### System Integration
+- Provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
 - He works onsite in America during the time of integration with client to reach the same goal with client management skill
 - Good write/oral English Communication
 - Schedule daily meeting with client
