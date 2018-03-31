@@ -19,7 +19,8 @@ group: navigation
 
 **Environment :** Linux, S4/HANA, Jdk 1.8, JScript, Bash and Python  
 **Industry :** ERP, Cloud
-###  Architecture Design
+### Responsibility
+####  Architecture Design
 - Work with German colleagues on requirement and system design
 - Customer Promise and Service
 - Apply microservices spring-boot & spring-integration
@@ -54,7 +55,8 @@ group: navigation
 
 **Environment :** Linux/Unix, Jdk 1.7, Oracle 10g, Cassandra, JScript, Bash and Python  
 **Industry :** Retail
-### System Integration
+### Responsibility
+#### System Integration
 - Provide services for Walmart underlying infrastructure. This system integrates among OMS, Carrier and Email systems on ETL and transformation between systems.
 - Works onsite in America during the time of integration with client to reach the same goal with client management skill
 - Good write/oral English Communication
@@ -63,14 +65,14 @@ group: navigation
 - Generate Component Design based on business requirement
 - Install, config and maintain the Production Environment (Unix/Linux)
 
-### Scrum Master
+#### Scrum Master
 - Clear the blocker between developer and product owner to ensure product owner can drive the development directly
 - Guide the product owner to apply Agile on daily work
 - Improve the situation and atmosphere of the whole team
 - Stimulate the creative of the team to improve productivity
 - Customer Promise and Service 
 
-### PROJECT
+### Project
 #### Walmart Labs Bedrock
 `2013.08-2016.12`
 >  The bedrock system is service platform for Walmart underlying infrastructure.
@@ -88,7 +90,8 @@ group: navigation
 
 **Environment :** Windchill10, Linux/Unix, Jdk 1.5, JScript  
 **Industry :** PDM/PLM
-### Implementation Consultant
+### Responsibility
+#### Implementation Consultant
 - Reviewing requests from Business Consultant
 - Component Design, Usecase design, Project schedule
 - Coding and co-operate with other subk or parterres
@@ -100,7 +103,8 @@ group: navigation
 `2007.12 - 2009.11`  
 
 **Environment :** Jdk 1.4, JScript and TIBCO BW  
-### Software Engineer
+### Responsibility
+#### Software Engineer
 Support the deployed TIBCO Application, including monitoring, development
 and deployment.Co-operating with onsite for new change request from custo mer. TIBCO is a Java based platform which focuses on business.
 - Front:HT ML Page(JSP, Servlet, Wicket, JScript) and Swing
@@ -115,7 +119,8 @@ and deployment.Co-operating with onsite for new change request from custo mer. T
 `2006.7 - 2007.11`  
 
 **Environment :** Jdk 1.4, JScript and Linux  
-### Software Engineer
+### Responsibility
+#### Software Engineer
 - Java/J2EE Programming
 - Open source Research
 - Build up underlying architecture(IOC, integration of Spring, Hivemind & Guice)
