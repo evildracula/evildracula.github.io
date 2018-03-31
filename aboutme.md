@@ -10,7 +10,7 @@ group: navigation
 **Year to work :**  {{ site.time | date: '%Y' } - 1984}  Years  
 **Certifications**
 - Domestic Senior Software Engineer Certification 2002.4
-- PMP 2015.12
+- PMP 2015.12 {{ site.time | date: '%Y' } - 2015} years until now
 
 ## Working Experience
 ---
