@@ -9,7 +9,7 @@ group: navigation
 **Current Company :** SAP  
 **Year to work :**  {{ site.time | date: '%Y' | minus:2006 }} Years  
 **Certifications**
-- Domestic Senior Software Engineer Certification 2002.4
+- Domestic Senior Software Engineer Certification 2005.11
 - PMP 2015.12 until present
 
 ## Working Experience
