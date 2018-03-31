@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 ## Personal Information
 **Current Company :** SAP  
-**Year to work :**  12 Years  
+**Year to work :**  <pre>{{ site.time | date: '%Y' }}</pre> Years  
 **Certifications**
 - Domestic Senior Software Engineer Certification 2002.4
 - PMP 2015.12 until present
