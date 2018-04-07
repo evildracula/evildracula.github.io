@@ -14,7 +14,7 @@ group: navigation
 
 ## Working Experience
 ---
-![SAP](https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg)  
+![SAP](/resources/images/system/logo_sap.svg)  
 `2017.1 -- present`  
 
 **Environment :** Linux, S4/HANA, Jdk 1.8, JScript, Bash and Python  
@@ -50,7 +50,7 @@ group: navigation
 
 ---
 
-![BLEUM](http://www.bleum.com/wp-content/uploads/2017/11/Bleum_Logo-3.png)  
+![BLEUM](/resources/images/system/logo_bleum.png)  
 `2013.8 -- 2016.12`  
 
 **Environment :** Linux/Unix, Jdk 1.7, Oracle 10g, Cassandra, JScript, Bash and Python  
@@ -85,7 +85,7 @@ group: navigation
   
 ---
 
-![PTC](https://www.ptc.com/-/media/PTC-Images/logo_dark.png?h=53&w=135&la=en&hash=176D3578983977F77E260619F84B33A8EB4003BD)  
+![PTC](/resources/images/system/logo_ptc.png)  
 `2009.11 - 2013.7`  
 
 **Environment :** Windchill10, Linux/Unix, Jdk 1.5, JScript  
@@ -99,7 +99,7 @@ group: navigation
 
 ---
 
-![Cognizant](https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg){:height="25%" width="25%"}  
+![Cognizant](/resources/images/system/logo_cog.svg){:height="25%" width="25%"}  
 `2007.12 - 2009.11`  
 
 **Environment :** Jdk 1.4, JScript and TIBCO BW  
