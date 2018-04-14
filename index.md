@@ -18,6 +18,5 @@ Todo
 ===
 **2018 Planning**
 - Enrich THIS
-- AI
 - Training
 
