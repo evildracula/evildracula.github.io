@@ -107,15 +107,15 @@ JB :
   #        
   analytics :
     provider : false
-    gauges :
+    gauges : false
         site_id : 'SITE ID'
-    google : 
+    google : false
         tracking_id : 'UA-123-12'
-    getclicky :
+    getclicky : false
       site_id : 
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
+    mixpanel : true
+        token : '61c2220be6202d5d1d390a5fc68e6ad5'
+    piwik : false
         baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
         idsite : '1'                   # the id of the site on Piwik
 
