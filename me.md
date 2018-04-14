@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aboutme
+title: Me
 header: About
 group: navigation
 ---
