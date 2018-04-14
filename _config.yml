@@ -113,8 +113,8 @@ JB :
         tracking_id : 'UA-123-12'
     getclicky : 
       site_id : 
-    mixpanel : true
-        token : 61c2220be6202d5d1d390a5fc68e6ad5
+    mixpanel : 
+        token : '61c2220be6202d5d1d390a5fc68e6ad5'
     piwik : 
         baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
         idsite : '1'                   # the id of the site on Piwik
