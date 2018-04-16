@@ -41,4 +41,4 @@ script type="text/javascript">
 ```
 
 ### Mixpanel 统计截图
-![Mix Panel 统计](/resources/images/2018/4/sc-mixpanel-1.png){:height="50%" width="50%"}  
+![Mix Panel 统计](/resources/images/2018/4/sc-mixpanel-1.png){:height="100%" width="100%"}  
