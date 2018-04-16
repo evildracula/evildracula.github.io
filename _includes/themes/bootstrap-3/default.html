@@ -97,7 +97,7 @@
     {% include JB/analytics %}
 
 	<script>
-	$$("a").click(function( e ) {
+	jQuery("a").click(function( e ) {
 	    // e.preventDefault();
 	    mixpanel.track_links(e.target);
 	});
