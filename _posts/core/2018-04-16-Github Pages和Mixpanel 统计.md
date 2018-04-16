@@ -44,7 +44,7 @@ script type="text/javascript">
 >  _includes/themes/bootstrap-3/post.html  
   
 ```
-{% include JB/analytics %}
+\\{\\% include JB/analytics \\%\\}
 <script>
  mixpanel.track("View posts");
 </script>
