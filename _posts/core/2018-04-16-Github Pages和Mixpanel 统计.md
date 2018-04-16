@@ -42,12 +42,12 @@ script type="text/javascript">
 
 #### 修改 posts 的内容
 >  _includes/themes/bootstrap-3/post.html  
+  
 ```
 {% include JB/analytics %}
 <script>
  mixpanel.track("View posts");
 </script>
-
 ```
 
 ### Mixpanel 统计截图
