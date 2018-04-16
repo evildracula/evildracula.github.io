@@ -40,5 +40,15 @@ script type="text/javascript">
 </script>
 ```
 
+#### 修改 posts 的内容
+>  _includes/themes/bootstrap-3/post.html  
+```
+{% include JB/analytics %}
+<script>
+ mixpanel.track("View posts");
+</script>
+
+```
+
 ### Mixpanel 统计截图
 ![Mix Panel 统计](/resources/images/2018/4/sc-mixpanel-1.png){:height="100%" width="100%"}  
