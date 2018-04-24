@@ -41,6 +41,10 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
+	<!-- fancybox -->
+	<link href="{{ BASE_PATH }}/themes/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" media="all" />
+
+
   </head>
 
   <body>
@@ -111,5 +115,12 @@
 
     <!--script src="http://code.jquery.com/jquery-1.10.2.min.js"></script-->
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ BASE_PATH }}/themes/fancybox/source/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script>
+		// Add Fancybox
+		jQuery(document).ready(function() {
+			jQuery('.fancybox').fancybox();
+		});
+	</script>
   </body>
 </html>
