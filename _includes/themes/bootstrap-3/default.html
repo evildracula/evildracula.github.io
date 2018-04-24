@@ -119,6 +119,9 @@
 	<script>
 		// Add Fancybox
 		jQuery(document).ready(function() {
+			jQuery("p img").each(function(i, e) {
+				e.class="fancybox";
+			});
 			jQuery('.fancybox').fancybox();
 		});
 	</script>
