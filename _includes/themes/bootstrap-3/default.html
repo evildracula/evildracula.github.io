@@ -122,7 +122,9 @@
 			jQuery("p img").each(function(i, e) {
 				e.setAttribute('class','fancybox');
 			});
-			jQuery('.fancybox').fancybox();
+			jQuery('.fancybox').fancybox({
+				"openEffect":"elastic", "closeEffect":"elastic",
+			});
 		});
 	</script>
   </body>
