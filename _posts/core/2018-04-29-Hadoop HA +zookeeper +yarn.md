@@ -297,10 +297,10 @@ hadoop配置主要涉及hdfs-site.xml，core-site.xml，mapred-site.xml，yarn-s
 - 在三个节点上启动Journalnode deamons，然后jps，出现JournalNode进程。  
 ```
 sbin/./hadoop-daemon.sh start journalnode
-
 jps
 JournalNode
 ```
+
 - 格式化master上的namenode（任意一个），然后启动该节点的namenode。
 ```
 bin/hdfs namenode -format
