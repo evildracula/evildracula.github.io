@@ -24,7 +24,7 @@ comments: true
 </pre>
 
 #### 详细代码
-```
+```java
 package ext.hello;
 
 import java.util.ArrayList;
