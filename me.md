@@ -21,10 +21,9 @@ Shawn was most recently involved in next generation of SAP support system in clo
 - Sports: Badminton, Jogging, Bicycle
 - Machine: RasPi, UAV
 - TV & Movies: Documentary, Live Show
----
   
    
-
+  
 ## Working Experience
 ---
 ![SAP](/resources/images/system/logo_sap.svg)  
