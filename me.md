@@ -11,6 +11,17 @@ group: navigation
 **Certifications**
 - Domestic Senior Software Engineer Certification 2005.11
 - PMP 2015.12 until present
+## About
+### Self Introduction
+  Shawn has been engrossed himself in IT Services for {{ site.time | date: '%Y' | minus:2006 }} years. He focuses on back-end services, integration, distributed system and HA.  
+Shawn was most recently involved in next generation of SAP support system in clouds which includes incident handling, feature innovation and robots integration. He worked on architecture design of Microservices and applied Continue Integration to projects.  
+  Prior to that, Shawn worked on system integration for Walmart underlying infrastructure, which provides integration among OMS, Carrier and Email services, not only to improve the stability of the system but also commit to adapt to the explosive growth of the business needs. He helped to set up a stress test framework which simulated the actual situation and stress of the Holidays. Walmart labs colleagues obtained benefit from simulation result according to preparation to prevent crash caused by insufficient system bandwidth.  
+
+### Hobby
+- Sports: Badminton, Jogging, Bicycle
+- Machine: RasPi, UAV
+- TV & Movies: Documentary, Live Show
+
 
 ## Working Experience
 ---
