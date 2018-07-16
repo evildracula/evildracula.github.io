@@ -27,7 +27,7 @@ Shawn was most recently involved in next generation of SAP support system in clo
 ## Working Experience
 ---
 ![SAP](/resources/images/system/logo_sap.svg)  
-`2017.1 -- present`  
+`2017.1 -- 2018.5`  
 
 **Environment :** Linux, S4/HANA, Jdk 1.8, JScript, Bash and Python  
 **Industry :** ERP, Cloud
