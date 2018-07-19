@@ -33,6 +33,9 @@ production_url : https://evildracula.github.io
 
 gems: ["jekyll-sitemap"]
 
+plugins:
+  - jekyll-sitemap
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
