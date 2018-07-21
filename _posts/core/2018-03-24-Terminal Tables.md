@@ -129,23 +129,44 @@ public class DrawTable {
 		}
 	}
 
-	public static void main(String[] args) {
-		String title = "HelloWorld";
-		String[] header = new String[] {"Radom1", "Random2", "Random3"};
-		int COL = header.length;
-		Random r = new Random(System.currentTimeMillis());
-		int DATA_LEN = 5;
-		List<List<String>> data = new ArrayList<>();
-		for (int i = 0; i < DATA_LEN; i++) {
-			List<String> rec = new ArrayList<>();
-			for (int j = 0; j < COL; j++) {
-				rec.add(r.nextGaussian() + "");
-			}
-			data.add(rec);
-		}
-		System.out.println(new DrawTable(title, header, data).draw());
+    public static List<List<String>> fileReader(String file) {
+        List<List<String>> data = new ArrayList<>();
+        BufferedReader fileIn = null;
+        try {
+            fileIn = new BufferedReader(new FileReader(file));
+            while (true) {
+                String lineData = fileIn.readLine();
+                if (lineData == null) {
+                    break;
+                }
+                String[] colData = lineData.split(",");
+                List<String> colDataList = new ArrayList<>();
+                data.add(colDataList);
+                for (String col : colData) {
+                    colDataList.add(col);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fileIn.close();
+            } catch (IOException e) {
+            }
+        }
+        return data;
+    }
 
-	}
+
+    public static void main(String[] args) {
+        String title = "HelloWorld";
+        String fName = "C:\\Users\\shyuan\\temp\\data.csv";
+        List<List<String>> data = fileReader(fName);
+        String[] header = data.get(0).toArray(new String[]{});
+        data.remove(0);
+        System.out.println(new DrawTable(title, header, data).draw());
+
+    }
 
 }
 ```
