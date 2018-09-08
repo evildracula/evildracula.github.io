@@ -1,0 +1,36 @@
+---
+layout: post
+category: tech
+tagline: ""
+tags : [devops]
+comments: true
+---
+{% include JB/setup %}
+
+#### Install sqlite3
+```
+sudo wget https://www.sqlite.org/2018/sqlite-tools-linux-x86-3240000.zip
+```
+
+
+#### Install mysql
+```
+wget http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm
+sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+sudo yum install mysql-community-server
+
+service mysqld start/stop
+
+mysql -u root
+CREATE DATABASE grafana_db
+insert into mysql.user(Host,User,Password) values("localhost","grafanaReader",password("password"));
+flush privileges;
+grant all privileges on granfana_db.* to grafanaReader@localhost identified by 'password';
+flush privileges;
+
+mysql -u grafanaReader -p
+```
+
+#### Install grafana
+touch bin/grafana.db
+sudo bin/grafana-server -config="conf/defaults.ini"
