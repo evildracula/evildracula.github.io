@@ -7,6 +7,7 @@ comments: true
 ---
 {% include JB/setup %}
 
+```
 TODAY=`date "+%b %d, %Y"`
 cat vmlist.txt|while read line;do
     EXPIRE_DATE=`ssh -n $line "chage -l wmuser|grep 'expires';exit"|tail|awk '{print $4,$5,$6}'`;
@@ -20,4 +21,4 @@ cat vmlist.txt|while read line;do
         echo "$TODAY > $EXPIRE_DATE"
     fi;
 done;
-
+```
