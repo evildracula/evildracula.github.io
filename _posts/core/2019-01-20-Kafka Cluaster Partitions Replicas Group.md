@@ -42,8 +42,8 @@ comments: true
 
 ## Group on Consumers
 ### Kafka Partition & Group
-1. 原理图
-2. 原理描述  
+- 原理图
+- 原理描述  
 
 ```
 一个topic 可以配置几个partition，produce发送的消息分发到不同的partition中，consumer接受数据的时候是按照group来接受，kafka确保每个partition只能同一个group中的同一个consumer消费，如果想要重复消费，那么需要其他的组来消费。Zookeerper中保存这每个topic下的每个partition在每个group中消费的offset  
@@ -53,7 +53,7 @@ comments: true
 假设一个topic test 被groupA消费了，现在启动另外一个新的groupB来消费test，默认test-groupB的offset不是0，而是没有新建立，除非当test有数据的时候，groupB会收到该数据，该条数据也是第一条数据，groupB的offset也是刚初始化的ofsert, 除非用显式的用–from-beginnging 来获取从0开始数据   
 ```
 
-3. 查看topic-group的offsert  
+- 查看topic-group的offsert  
 
 ```
 位置：zookeeper 
@@ -67,10 +67,10 @@ int partition = hashCode % 50;
 使用命令查看： kafka-simple-consumer-shell.sh --topic __consumer_offsets --partition 11 --broker-list localhost:9092,localhost:9093,localhost:9094 --formatter "kafka.coordinator.GroupMetadataManager\$OffsetsMessageFormatter"
 ```
   
-4. 参数  
+- 参数  
 auto.offset.reset:默认值为largest，代表最新的消息，smallest代表从最早的消息开始读取，当consumer刚开始创建的时候没有offset这种情况，如果设置了largest，则为当收到最新的一条消息的时候开始记录offsert,若设置为smalert，那么会从头开始读partition
 
-5. Consumer Group 
+- Consumer Group 
 使用Consumer high level API时，同一Topic的一条消息只能被同一个Consumer Group内的一个Consumer消费，但多个Consumer Group可同时消费这一消息。  
 这是Kafka用来实现一个Topic消息的广播（发给所有的Consumer）和单播（发给某一个Consumer）的手段。一个Topic可以对应多个Consumer Group。如果需要实现广播，只要每个Consumer有一个独立的Group就可以了。要实现单播只要所有的Consumer在同一个Group里。用Consumer Group还可以将Consumer进行自由的分组而不需要多次发送消息到不同的Topic。  
 实际上，Kafka的设计理念之一就是同时提供离线处理和实时处理。根据这一特性，可以使用Storm这种实时流处理系统对消息进行实时在线处理，同时使用Hadoop这种批处理系统进行离线处理，还可以同时将数据实时备份到另一个数据中心，只需要保证这三个操作所使用的Consumer属于不同的Consumer Group即可。  
