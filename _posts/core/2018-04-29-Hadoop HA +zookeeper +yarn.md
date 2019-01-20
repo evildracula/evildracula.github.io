@@ -2,7 +2,7 @@
 layout: post
 category: tech
 tagline: ""
-tags : [stream]
+tags : [streaming]
 comments: true
 ---
 {% include JB/setup %}
