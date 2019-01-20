@@ -50,6 +50,7 @@ comments: true
 所以，如果要一个group用几个consumer来同时读取的话，需要多线程来读取，一个线程相当于一个consumer实例。当consumer的数量大于分区的数量的时候，有的consumer线程会读取不到数据。   
 假设一个topic test 被groupA消费了，现在启动另外一个新的groupB来消费test，默认test-groupB的offset不是0，而是没有新建立，除非当test有数据的时候，groupB会收到该数据，该条数据也是第一条数据，groupB的offset也是刚初始化的ofsert, 除非用显式的用–from-beginnging 来获取从0开始数据   
 3、查看topic-group的offsert  
+
 ```
 位置：zookeeper 
 路径：[zk: localhost:2181(CONNECTED) 3] ls /brokers/topics/__consumer_offsets/partitions 
@@ -61,7 +62,7 @@ int partition = hashCode % 50;
 先计算group的hashCode，再除以分区数(50),可以得到partition的值 
 使用命令查看： kafka-simple-consumer-shell.sh --topic __consumer_offsets --partition 11 --broker-list localhost:9092,localhost:9093,localhost:9094 --formatter "kafka.coordinator.GroupMetadataManager\$OffsetsMessageFormatter"
 ```
-
+  
 4. 参数  
 auto.offset.reset:默认值为largest，代表最新的消息，smallest代表从最早的消息开始读取，当consumer刚开始创建的时候没有offset这种情况，如果设置了largest，则为当收到最新的一条消息的时候开始记录offsert,若设置为smalert，那么会从头开始读partition
 
