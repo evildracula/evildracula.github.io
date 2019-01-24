@@ -10,6 +10,7 @@ comments: true
 #### 时序解析
 
 1. 线程顺序  
+  
 |Thread|Predecossor|Currrent|Next|
 |:---:|:---:|:---:|:---:|
 |T1|P=null >> P=C1|C1|C1.next =NULL|
@@ -18,6 +19,7 @@ comments: true
   
     
 2. 代码详解  
+  
 ```
 T1 & T2
 def Lock {
