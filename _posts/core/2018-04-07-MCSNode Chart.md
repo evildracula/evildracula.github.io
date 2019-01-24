@@ -8,6 +8,7 @@ comments: true
 {% include JB/setup %}
 
 #### 时序解析
+  
 |Thread|Predecossor|Currrent|Next|
 |:---:|:---:|:---:|:---:|
 |T1|P=null >> P=C1|C1|C1.next =NULL|
