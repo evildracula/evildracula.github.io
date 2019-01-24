@@ -8,13 +8,16 @@ comments: true
 {% include JB/setup %}
 
 #### 时序解析
-  
+
+1. 线程顺序
 |Thread|Predecossor|Currrent|Next|
 |:---:|:---:|:---:|:---:|
 |T1|P=null >> P=C1|C1|C1.next =NULL|
 |T2|P=C1|C2|C1.next = C2|
 |T3|P=C2|C3|C2.next = C3|
-
+  
+    
+2. 代码详解
 ```
 T1 & T2
 def Lock {
