@@ -7,7 +7,8 @@ comments: true
 ---
 {% include JB/setup %}
 
-```
+
+```java
 package ext.window.test;
 
 import org.apache.samza.context.Context;
