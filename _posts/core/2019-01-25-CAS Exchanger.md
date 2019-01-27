@@ -9,40 +9,28 @@ comments: true
 
 
 ```java
-package ext.window.test;
+package com.test.distrib;
 
-import org.apache.samza.context.Context;
-import org.apache.samza.context.TaskContext;
-import org.apache.samza.metrics.Counter;
-import org.apache.samza.storage.kv.KeyValueStore;
-import org.apache.samza.system.IncomingMessageEnvelope;
-import org.apache.samza.system.OutgoingMessageEnvelope;
-import org.apache.samza.system.SystemStream;
-import org.apache.samza.task.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.io.PrintStream;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-/**
- * 当前Samza 版本中，Container 一个线程中 的 window()调用不会和一个process()同时发生调用
- */
-public class FileDistributionStreamExchangeTask implements StreamTask, InitableTask, WindowableTask {
+public class FileDistributionStreamExchangeTask implements Runnable {
 
     private static final String counterGrp = "edit-counters";
     private static final String storeName1 = "wikipedia-stats1";
     private static final String storeName2 = "wikipedia-stats2";
     private static final String storeKey1 = "Hello1";
     private static final String storeKey2 = "Hello2";
-    private static final SystemStream OUTPUT_STREAM = new SystemStream("kafka", storeName1);
+    private static final PrintStream OUTPUT_STREAM = System.out;
     private static final String counterName1 = "repeat-edits1";
     private static final String counterName2 = "repeat-edits2";
 
     private DistributionStreamWorker worker1;
     private DistributionStreamWorker worker2;
 
-    private long limits = 2000;
+    private static final long limits = 2000;
 
     private volatile DistributionStreamWorker cworker;
     private volatile AtomicReferenceFieldUpdater<FileDistributionStreamExchangeTask, DistributionStreamWorker> storeCAS =
@@ -50,90 +38,154 @@ public class FileDistributionStreamExchangeTask implements StreamTask, InitableT
                     DistributionStreamWorker.class,
                     "cworker");
 
-    @Override
-    public void init(Context context) throws Exception {
-        TaskContext taskContext = context.getTaskContext();
-        this.worker1 = new DistributionStreamWorker(storeKey1,
-                taskContext.getTaskMetricsRegistry().newCounter(counterGrp,
-                        counterName1), (KeyValueStore<String, List<String>>) taskContext.getStore(storeName1));
-        this.worker2 = new DistributionStreamWorker(storeKey2,
-                taskContext.getTaskMetricsRegistry().newCounter(counterGrp,
-                        counterName2), (KeyValueStore<String, List<String>>) taskContext.getStore(storeName2));
+
+    public FileDistributionStreamExchangeTask() {
+        init();
+    }
+
+    public void init() {
+        Map<String, Map<String, List<String>>> taskContext = new HashMap<>();
+        taskContext.put(storeName1, new HashMap<>());
+        taskContext.put(storeName2, new HashMap<>());
+        this.worker1 = new DistributionStreamWorker(storeKey1, new AtomicLong(), taskContext.get(storeName1));
+        this.worker2 = new DistributionStreamWorker(storeKey2, new AtomicLong(), taskContext.get(storeName2));
         // cworker should be null, init once
         storeCAS.getAndSet(this, worker1);
+        Timer t = new Timer();
+        t.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                window();
+            }
+        }, 0,100);
 
     }
 
-    @Override
-    public void process(IncomingMessageEnvelope envelope, MessageCollector collector, TaskCoordinator coordinator) throws Exception {
+    public void process(IncomingMessageEnvelope envelope) {
+        // Check for limit
         DistributionStreamWorker sWorker = cworker;
-        while (sWorker.counter.getCount() >= limits) {// TODO 1
+        // sWorker 是cWorker的snapshot，只有当前counter满了才调用
+        // 如果两个都limits了，先抢到的先发送
+        while (sWorker.counter.get() >= limits) {// TODO 1
             // 高并发，没有机会获得CAS，更换到当前worker
-            // TODO 2.
+            // TODO 2
             if (sWorker == worker1) {
                 if (!storeCAS.compareAndSet(this, worker1, worker2)) {
                     sWorker = cworker;
+                    System.out.println("Swap 1 - 2");
                     continue;
                 }
             } else {
                 if (!storeCAS.compareAndSet(this, worker2, worker1)) {
                     sWorker = cworker;
+                    System.out.println("Swap 2 - 1");
                     continue;
                 }
             }
-            sWorker.purge(collector, this.limits);
+            // 获得锁，发送当前 sWorker，是一个同步点
+            sWorker.purge(this.limits);
         }
         cworker.handleMsg(envelope);
     }
 
 
-    @Override
-    public void window(MessageCollector collector, TaskCoordinator coordinator) throws Exception {
+    public void window() {
         // Send the remains
-        cworker.purge(collector, -1);
+        System.out.println("window flush==============================");
+        cworker.purge(-1);
     }
 
+    @Override
+    public void run() {
+
+        while (true) {
+            IncomingMessageEnvelope msg = new IncomingMessageEnvelope();
+            Map<String, Object> map = new HashMap<>();
+            map.put("orderDetails", "Generator " + Thread.currentThread().getId());
+            msg.setMessage(map);
+            map.put("" + System.currentTimeMillis(), "Thread " + Thread.currentThread().getId() + ": some msg");
+            process(msg);
+        }
+    }
+
+    private static class IncomingMessageEnvelope {
+        private Map<String, Object> message;
+
+
+        public Map<String, Object> getMessage() {
+            return message;
+        }
+
+        public void setMessage(Map<String, Object> message) {
+            this.message = message;
+        }
+    }
+
+
     private static class DistributionStreamWorker {
-        volatile Counter counter;
+        volatile AtomicLong counter;
         volatile String batchInfo = null;
-        KeyValueStore<String, List<String>> store;
+        Map<String, List<String>> store;
         String storeKey;
 
-        private DistributionStreamWorker(String storeKey, Counter counter, KeyValueStore<String, List<String>> store) {
+        private DistributionStreamWorker(String storeKey, AtomicLong counter, Map<String, List<String>> store) {
             this.counter = counter;
             this.store = store;
             this.storeKey = storeKey;
         }
 
-        public synchronized void purge(MessageCollector collector, long limit) {
-            // TODO 3 == 1
-            if (limit == -1 || counter.getCount() >= limit) {
-                flush(collector);
-                return;
+        public synchronized void purge(long limit) {
+            // TODO 3 互斥
+            if (limit == -1 || counter.get() >= limit) {
+                flush();
             }
         }
 
-        private void flush(MessageCollector collector) {
-            collector.send(new OutgoingMessageEnvelope(OUTPUT_STREAM, this.store));
-            this.store.delete(storeKey);
+        private void flush() {
+            OUTPUT_STREAM.println("Start to flush" + this.store.get("orderDetails"));
+            this.store.remove(storeKey);
             counter.set(0l);
             batchInfo = "";
         }
 
         public synchronized void handleMsg(IncomingMessageEnvelope envelope) {
-            Map<String, Object> edit = (Map<String, Object>) envelope.getMessage();
+            System.out.println("Clean" + Thread.currentThread().getId());
+            Map<String, Object> edit = envelope.getMessage();
             List<String> arr = this.store.get(storeKey);
             if (arr == null) {
                 arr = new ArrayList<>();
                 this.store.put(storeKey, arr);
             }
-            arr.add(edit.get("orderDetails").toString());
+            String msg = edit.get("orderDetails").toString();
+            long count = this.counter.get();
+            if (count > limits+10) {
+                System.err.println(count + "Out of limists!!!!");
+                System.exit(0);
+            }
+            System.out.println("Total :" + count + "Current Consumer ===" + Thread.currentThread().getId() +
+                    "+++++++++++" + msg);
+            arr.add(msg);
             // Update Batch here if possible
             batchInfo += 1;
-            this.counter.inc();
+            this.counter.getAndIncrement();
+        }
+
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        final FileDistributionStreamExchangeTask t = new FileDistributionStreamExchangeTask();
+        Thread[] tgroup = new Thread[10];
+        for (int i = 0; i < tgroup.length; i++) {
+            tgroup[i] = new Thread(t);
+            tgroup[i].join();
+        }
+        for (int i = 0; i < tgroup.length; i++) {
+            tgroup[i] = new Thread(t);
+            tgroup[i].start();
         }
 
     }
 }
+
 
 ```
