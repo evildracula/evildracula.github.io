@@ -57,17 +57,13 @@ public class FileDistributionStreamExchangeTask implements Runnable {
             public void run() {
                 window();
             }
-        }, 0,100);
+        }, 0, 100);
 
     }
 
     public void process(IncomingMessageEnvelope envelope) {
-        // Check for limit
         DistributionStreamWorker sWorker = cworker;
-        // sWorker 是cWorker的snapshot，只有当前counter满了才调用
-        // 如果两个都limits了，先抢到的先发送
         while (sWorker.counter.get() >= limits) {// TODO 1
-            // 高并发，没有机会获得CAS，更换到当前worker
             // TODO 2
             if (sWorker == worker1) {
                 if (!storeCAS.compareAndSet(this, worker1, worker2)) {
@@ -82,9 +78,9 @@ public class FileDistributionStreamExchangeTask implements Runnable {
                     continue;
                 }
             }
-            // 获得锁，发送当前 sWorker，是一个同步点
             sWorker.purge(this.limits);
         }
+		// TODO 5
         cworker.handleMsg(envelope);
     }
 
@@ -135,20 +131,28 @@ public class FileDistributionStreamExchangeTask implements Runnable {
         }
 
         public synchronized void purge(long limit) {
-            // TODO 3 互斥
+            // TODO 3
             if (limit == -1 || counter.get() >= limit) {
                 flush();
             }
         }
 
         private void flush() {
-            OUTPUT_STREAM.println("Start to flush" + this.store.get("orderDetails"));
+            List<String> stack = this.store.get(storeKey);
+            if (stack == null) {
+                return;
+            }
+            OUTPUT_STREAM.println("Start to flush" + this.store.get(storeKey).size());
             this.store.remove(storeKey);
             counter.set(0l);
             batchInfo = "";
         }
 
         public synchronized void handleMsg(IncomingMessageEnvelope envelope) {
+			// TODO 4
+            if (counter.get() >= limits) {
+                flush();
+            }
             System.out.println("Clean" + Thread.currentThread().getId());
             Map<String, Object> edit = envelope.getMessage();
             List<String> arr = this.store.get(storeKey);
@@ -158,7 +162,7 @@ public class FileDistributionStreamExchangeTask implements Runnable {
             }
             String msg = edit.get("orderDetails").toString();
             long count = this.counter.get();
-            if (count > limits+10) {
+            if (count > limits) {
                 System.err.println(count + "Out of limists!!!!");
                 System.exit(0);
             }
@@ -174,7 +178,7 @@ public class FileDistributionStreamExchangeTask implements Runnable {
 
     public static void main(String[] args) throws InterruptedException {
         final FileDistributionStreamExchangeTask t = new FileDistributionStreamExchangeTask();
-        Thread[] tgroup = new Thread[10];
+        Thread[] tgroup = new Thread[2];
         for (int i = 0; i < tgroup.length; i++) {
             tgroup[i] = new Thread(t);
             tgroup[i].join();
@@ -186,6 +190,7 @@ public class FileDistributionStreamExchangeTask implements Runnable {
 
     }
 }
+
 
 
 ```
