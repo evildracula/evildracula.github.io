@@ -11,10 +11,10 @@ comments: true
 ### Kafka 集群默认自动分配解析
 - 下面以一个Kafka集群中4个Broker举例，创建1个topic包含4个Partition，2 Replication；数据Producer流动如图所示：
 
-|Broker1|Broker2|Broker3|Broker4|
-|:---:|:---:|:---:|:---:|
-|P0|P1|P2|P3|
-|P3|P0|P1|P2|
+|Broker1|Broker2|Broker3|Broker4|BrokerX|BrokerX|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|P0|P1|P2|P3|N/A|N/A|
+|P3|P0|P1|P2|N/A|N/A|
 
 
 
