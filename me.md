@@ -26,10 +26,10 @@ group: navigation
   
 ## Working Experience
 ---
+![SBUX](/resources/images/system/sblogo.svg)  
 `2018.5 -- present`
 
-** Industry:** Retail, Enterprise Integration
-![SB](/resources/images/system/sblogo.svg)  
+**Industry:** Retail, Enterprise Integration
 ### Responsibility
 #### Integration Project Manager
 - Enterprise Integration (Full Lifecycle)
