@@ -14,8 +14,8 @@ group: navigation
 
 **Self Introduction**  
   Shawn has been engrossed himself in IT Services for {{ site.time | date: '%Y' | minus:2006 }} years. He focuses on back-end services, integration, distributed system and HA.  
-Shawn was most recently involved in next generation of SAP support system in clouds which includes incident handling, feature innovation and robots integration. He worked on architecture design of Microservices and applied Continue Integration to projects.  
-  Prior to that, Shawn worked on system integration for Walmart underlying infrastructure, which provides integration among OMS, Carrier and Email services, not only to improve the stability of the system but also commit to adapt to the explosive growth of the business needs. He helped to set up a stress test framework which simulated the actual situation and stress of the Holidays. Walmart labs colleagues obtained benefit from simulation result according to preparation to prevent crash caused by insufficient system bandwidth.  
+  Shawn most recently contributed to company success by work with vendor and partners to ensure the availability and serviceability of integration services/platform.
+  Prior to that, Shawn was involved in next generation of SAP support system in clouds which includes incident handling, feature innovation and robots integration. He worked on architecture design of Microservices and applied Continue Integration to projects.  
 
 **Hobby**  
 - Sports: Badminton, Jogging, Bicycle
@@ -25,6 +25,24 @@ Shawn was most recently involved in next generation of SAP support system in clo
    
   
 ## Working Experience
+---
+`2018.5 -- present`
+
+** Industry:** Retail, Enterprise Integration
+![SB](/resources/images/system/sblogo.svg)  
+### Responsibility
+#### Integration Project Manager
+- Enterprise Integration (Full Lifecycle)
+  - Work with local & global team on integration of BPM, ERP, etc.
+  - Architecture management of IT Integrations
+  - Omni Channel Integration (Store, O2O, etc.)
+- Responsibilities
+  - Responsible for integration services/platform operational support, administration and maintenance
+  - Continuously improve integration services, systems and process by analyzing system capacities, monitoring and tuning system performance, designing and developing scripts, contributing and maintaining technical documents
+  - Ensures adherence to IT standards and established standards and practices for design and development of systems
+  - Coordinate with IT vendor and partners to ensure timely, quality and cost effective delivery and support of integration services and platform
+
+
 ---
 ![SAP](/resources/images/system/logo_sap.svg)  
 `2017.1 -- 2018.5`  
